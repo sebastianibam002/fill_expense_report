@@ -66,7 +66,7 @@ describe_purpose.send_keys(df_general['Describe'].values[0])  # Replace with you
 time.sleep(1)
 
 fund_code = driver.find_element(By.XPATH, '//*[@id="fundcode_def"]')
-fund_code.send_keys(df_general['FundCode'].values[0])
+fund_code.send_keys(str(df_general['FundCode'].values[0]))
 
 time.sleep(3)
 clamain_affiliation = driver.find_element(By.XPATH, '//*[@id="claim_affiliation"]')
